@@ -1,6 +1,6 @@
 package com.magosso.domain.service
 
-import com.magosso.domain.`interface`.IAdminService
+import com.magosso.domain.service.`interface`.IAdminService
 import com.magosso.ecommerce.model.Admin
 import org.springframework.stereotype.Repository
 

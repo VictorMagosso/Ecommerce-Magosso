@@ -1,4 +1,4 @@
-package com.magosso.domain.`interface`
+package com.magosso.domain.service.`interface`
 
 import com.magosso.ecommerce.model.Admin
 import org.springframework.stereotype.Repository

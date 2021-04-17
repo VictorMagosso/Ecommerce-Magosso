@@ -8,5 +8,4 @@ class EcommerceApplication
 
 fun main(args: Array<String>) {
 	runApplication<EcommerceApplication>(*args)
-	print("rodando")
 }

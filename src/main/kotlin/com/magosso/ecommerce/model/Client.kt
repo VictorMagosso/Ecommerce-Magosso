@@ -7,11 +7,12 @@ import javax.persistence.Id
 import javax.persistence.Table
 
 @Entity
-@Table(name = "admin")
-data class Admin(
+@Table(name = "client")
+data class Client(
         @Id
-        val cIdAdmin: String = "",
+        val cIdUser: String = "",
         val cName: String = "",
+        val cAddress: String = "",
         @Column(unique = true)
         val cEmail: String = "",
         val cPassword: String = "",
