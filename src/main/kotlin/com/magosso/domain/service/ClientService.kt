@@ -19,7 +19,7 @@ class ClientService(@Autowired val repository: ClientRepository) : IClientServic
     }
 
     override fun persistClient(client: Client?): Client? {
-
+        repository.save(client!!)
         return null
     }
 
