@@ -1,12 +1,15 @@
 package com.magosso.domain.service
 
-import com.magosso.domain.service.`interface`.IAdminService
+import com.magosso.domain.repository.AdminRepository
+import com.magosso.domain.service.implementation.IAdminService
 import com.magosso.ecommerce.model.Admin
-import org.springframework.stereotype.Repository
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Service
 
-@Repository
-class AdminService : IAdminService {
-    override fun findAll(): List<Admin?>? {
+@Service
+class AdminService(@Autowired repository: AdminRepository) : IAdminService {
+
+    override fun findAllAdmins(): List<Admin?>? {
         //TODO("Not yet implemented")
         return null
     }
@@ -16,7 +19,7 @@ class AdminService : IAdminService {
         return null
     }
 
-    override fun save(admin: Admin?): Admin? {
+    override fun saveAdmin(admin: Admin?): Admin? {
         //TODO("Not yet implemented")
         return null
     }

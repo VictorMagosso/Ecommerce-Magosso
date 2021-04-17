@@ -1,11 +1,17 @@
 package com.magosso.ecommerce
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.domain.EntityScan
 import org.springframework.boot.runApplication
+import org.springframework.context.annotation.ComponentScan
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories
 
 @SpringBootApplication
+@ComponentScan("com.magosso.*")
+@EntityScan("com.magosso.*")
+@EnableJpaRepositories("com.magosso.*")
 class EcommerceApplication
 
 fun main(args: Array<String>) {
-	runApplication<EcommerceApplication>(*args)
+    runApplication<EcommerceApplication>(*args)
 }
