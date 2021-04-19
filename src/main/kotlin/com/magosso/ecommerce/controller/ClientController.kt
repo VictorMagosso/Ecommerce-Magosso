@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.Async
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("api/clientes")
 class ClientController(@Autowired val clientService: IClientService) {
 
     @PostMapping("/save")
