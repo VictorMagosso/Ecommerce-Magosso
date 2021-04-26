@@ -16,4 +16,8 @@ class ProductService(@Autowired val repository: ProductRepository) : IProductSer
     override fun getProductById(id: Long): Optional<Product> {
         return repository.findById(id)
     }
+
+    override fun persistProduct(product: Product): Product {
+        return repository.save(product)
+    }
 }

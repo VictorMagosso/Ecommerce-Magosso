@@ -8,4 +8,5 @@ import java.util.*
 interface IProductService {
     fun getProductList(): List<Product>
     fun getProductById(id: Long): Optional<Product>
+    fun persistProduct(product: Product): Product
 }

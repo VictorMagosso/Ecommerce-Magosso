@@ -26,7 +26,7 @@ data class Product(
         @JsonFormat(pattern = "dd/MM/yyyy")
         val dUpdate: LocalDate? = null,
 
-        val nTotalStock: Double = 0.0,
+        val nTotalStock: Int = 0,
         val cUrlImg: String = "",
         val bIsOnSale: Boolean = false,
         val bIsOutOfStock: Boolean = false,
